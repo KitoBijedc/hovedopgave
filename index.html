@@ -185,7 +185,9 @@
         function downloadPDF() {
             var doc = new jsPDF('p', 'in', 'letter');
             doc.text('Hello world', 10, 10);
-            doc.save('myPDF');
+            doc.addHTML(document.body,function () {
+                doc.save('myPDF');
+            });
         }
     </script>
     <button onclick="downloadPDF()" class="button">Gem pdf</button>
