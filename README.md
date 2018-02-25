@@ -4,4 +4,5 @@ Hvis man ønsker at ændre i dataen skal man blot ændre i sankey.csv og følge 
 
 For at skifte mellem filerne skal man ændre linjen         
 // load the data (using the timelyportfolio csv method)
+
         d3.csv("sankey.csv", function(error, data) og erstatte "sankey.csv" med navnet på filen mman vil læse, i dette tilfælde "asbest.csv"
