@@ -25,6 +25,8 @@
     }
 
 </style>
+
+
 <body>
 
 <p id="chart">
@@ -35,7 +37,6 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="//mrrio.github.io/jsPDF/dist/jspdf.debug.js"></script>
 
-
     <a href="http://affaldplus.dk/"><img id="logo" src="http://resources.mynewsdesk.com/image/upload/t_next_gen_logo_limit_x2/i9qp5gknlvz3cxiebzds.jpg" height="100" style="position: fixed;top: 0px;right: 0px;"></a>
 
 
@@ -44,8 +45,8 @@
         var units = "Widgets";
 
         var margin = {top: 10, right: 10, bottom: 10, left: 10},
-            width = 700 - margin.left - margin.right,
-            height = 300 - margin.top - margin.bottom;
+            width = 1600 - margin.left - margin.right,
+            height = 800 - margin.top - margin.bottom;
 
         var formatNumber = d3.format(",.0f"),    // zero decimal places
             format = function(d) { return formatNumber(d) + " " + units; },
@@ -168,6 +169,8 @@
         });
 
     </script>
+
+
     <select name="box" id="box">
         <option value="sankey.csv">Dummy</option>
         <option value="asbest.csv">Asbest ind</option>
@@ -190,6 +193,9 @@
             });
         }
     </script>
+
+
+
     <button onclick="downloadPDF()" class="button">Gem pdf</button>
 
 </body>
